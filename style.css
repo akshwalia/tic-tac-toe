@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'blocky';
+    src: url(fonts/Legacy-6YgdM.ttf) format(truetype);
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    background-color: rgb(61, 60, 60);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding: 30px;
+    font-family: 'blocky', 'Arial';
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 500px;
+    width: 500px;
+    margin: 50px auto;
+    gap: 5px;
+}
+
+.box {
+    border: 2px solid rgb(167, 165, 165);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div:hover {
+    background-color: rgb(223, 220, 220);
+    cursor: pointer;
+}
+
+
+
