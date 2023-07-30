@@ -6,14 +6,15 @@
 body {
     margin: 0px;
     transition: 1s;
+    background-color: rgb(20, 20, 20);
 }
 
 .header {
-    background-color: rgb(61, 60, 60);
+    background-color: rgb(15, 15, 15);
     color: rgb(255, 255, 255);
-    font-size: 50px;
-    padding: 30px;
-    font-family: 'blocky', 'Arial';
+    font-size: 55px;
+    padding: 25px;
+    font-family: 'Finger Paint', 'Arial';
     letter-spacing: 2px;
     font-weight: bold;
     text-align: center;
@@ -30,7 +31,7 @@ body {
 }
 
 .box {
-    border: 2px solid rgb(167, 165, 165);
+    border: 2px solid rgb(48, 48, 48);;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -38,7 +39,7 @@ body {
 }
 
 .container div:hover {
-    background-color: rgb(223, 220, 220);
+    background-color: rgb(48, 48, 48);
     cursor: pointer;
 }
 
@@ -69,7 +70,7 @@ body {
     font-family: 'blocky';
     letter-spacing: 5px;
     word-spacing: 15px;
-    background-color: white;
+    background-color: rgb(126, 125, 125);
     filter: blur();
     transition: 0.7s;
 }
@@ -87,9 +88,12 @@ body {
     font-family: 'blocky';
     letter-spacing: 5px;
     word-spacing: 15px;
-    background-color: white;
+    background-color: rgb(126, 125, 125);
     filter: blur();
     transition: 1s;
 }
 
+img {
+    filter: invert();
+}
 
