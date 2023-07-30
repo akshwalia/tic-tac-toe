@@ -163,7 +163,7 @@ function restart () {
         box.innerHTML="";
     });
     overlay.remove();
-    
+
     firstBadge.classList.add('turntoplay');
     secondBadge.classList.remove('turntoplay');
     playagain.textContent="";
@@ -195,12 +195,17 @@ boxes.forEach(box => {
 startgame.addEventListener('click', (e) => {
     e.preventDefault();
 
-    playerone = player(playeronename.value);
-    playertwo = player(playertwoname.value);
+    playerone = player((playeronename.value || "Player 1"));
+    playertwo = player((playertwoname.value || "Player 2"));
     
 
     displayBadges();
     startOverlay.remove();
+}, {once:true});
+
+document.addEventListener('keydown', (e) => {
+    if(e.key === "Enter")
+        startgame.click();
 });
 
 playagain.addEventListener('click',restart);
