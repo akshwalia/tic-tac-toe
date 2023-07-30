@@ -5,6 +5,7 @@
 
 body {
     margin: 0px;
+    transition: 1s;
 }
 
 .header {
@@ -41,5 +42,54 @@ body {
     cursor: pointer;
 }
 
+
+.hovered {
+    filter: invert(91%) sepia(7%) saturate(27%) hue-rotate(71deg) brightness(84%) contrast(94%);
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.playagain {
+    border: 4px solid;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-family: 'blocky';
+    letter-spacing: 5px;
+    word-spacing: 15px;
+    background-color: white;
+    filter: blur();
+    transition: 0.7s;
+}
+
+.playagain:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.winnerDisplay {
+    border: 4px solid;
+    border-radius: 10px;
+    padding: 20px 70px;
+    font-size: 40px;
+    font-family: 'blocky';
+    letter-spacing: 5px;
+    word-spacing: 15px;
+    background-color: white;
+    filter: blur();
+    transition: 1s;
+}
 
 
