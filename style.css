@@ -33,6 +33,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0px 30px;
+    display: none;
 }
 
 .startPage div {
@@ -109,7 +110,7 @@ iframe {
 }
 
 .box {
-    border: 2px solid rgb(31, 31, 31);
+    border: 2px solid rgb(73, 73, 73);
     border-radius: 10px;
     display: flex;
     justify-content: center;
