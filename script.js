@@ -163,6 +163,7 @@ function restart () {
         box.innerHTML="";
     });
     overlay.remove();
+    
     firstBadge.classList.add('turntoplay');
     secondBadge.classList.remove('turntoplay');
     playagain.textContent="";

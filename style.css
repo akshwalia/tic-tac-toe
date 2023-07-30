@@ -78,6 +78,13 @@ button {
     transition: 0.5s;
 }
 
+.disclaimer {
+    grid-column: span 2;
+    font-family: 'Finger Paint', sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+
 button:hover {
     transform: scale(0.9);
     cursor: pointer;
